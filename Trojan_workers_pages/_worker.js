@@ -1,7 +1,7 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
  
-let Pswd = "trojan";
+let Pswd = "trojan@cloudflare"; //King modified
 const proxyIPs = ["ts.hpc.tw"]; //ts.hpc.tw edgetunnel.anycast.eu.org bestproxy.onecf.eu.org cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org proxy.xxxxxxxx.tk
 let cn_hostnames = [''];
 let CDNIP = 'www.visa.com.sg'
@@ -824,8 +824,8 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver: 
-    - 223.5.5.5
-    - 114.114.114.114
+    - 1.1.1.1
+    - 8.8.4.4
     - 8.8.8.8
   nameserver:
     - https://dns.alidns.com/dns-query
